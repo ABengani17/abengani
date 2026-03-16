@@ -1,5 +1,4 @@
 (function () {
-  // Apply saved theme immediately to avoid flash
   var saved = localStorage.getItem('theme') || 'light';
   document.documentElement.setAttribute('data-theme', saved);
 })();
