@@ -8,7 +8,7 @@
   --bg:     #ffffff;
   --text:   #222222;
   --muted:  #777777;
-  --border: #e5e5e5;
+  --border: #e8e8e8;
 }
 
 [data-theme="dark"] {
@@ -31,7 +31,7 @@ body {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* ── toggle fixed to bottom-left corner ── */
+/* ── toggle: bottom-left ── */
 .theme-toggle {
   position: fixed;
   bottom: 1.25rem;
@@ -54,21 +54,61 @@ body {
 main {
   max-width: 520px;
   margin: 0 auto;
-  padding: 4rem 1.25rem 5rem;
+  padding: 4.5rem 1.25rem 5rem;
 }
 
-h1 {
-  font-size: 1rem;
+/* ── top row: name left, cool links right ── */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.name {
+  font-size: 1.05rem;
   font-weight: normal;
-  margin-bottom: 1.5rem;
+  color: var(--text);
 }
 
-p {
+a.name-link {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a.name-link:hover {
+  color: var(--muted);
+}
+
+.cool-links-link {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #ccc;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a.cool-links-link:hover {
+  color: var(--text);
+  text-decoration-color: var(--text);
+}
+
+.cool-links-link.active {
+  color: var(--text);
+  text-decoration-color: var(--text);
+}
+
+/* ── intro ── */
+.intro p {
   font-size: 0.96rem;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.25rem;
 }
 
-p:last-child {
+.intro p:last-child {
   margin-bottom: 0;
 }
 
@@ -78,7 +118,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-color: #bbb;
-  transition: text-decoration-color 0.15s ease;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
 }
 
 a:hover {
@@ -96,7 +136,6 @@ a:hover {
 .links-row {
   color: var(--muted);
   font-size: 0.875rem;
-  margin-top: 0.5rem;
 }
 
 .links-row a {
@@ -109,49 +148,11 @@ a:hover {
   text-decoration-color: var(--text);
 }
 
-/* ── links page ── */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 2.75rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.nav-home {
-  font-weight: normal;
-  font-size: 1rem;
-  color: var(--text);
-  text-decoration: none;
-}
-
-a.nav-home:hover {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.nav-links {
-  font-size: 0.875rem;
-}
-
-.nav-links a.active {
-  text-decoration-color: var(--text);
-}
-
-.page-header {
-  margin-bottom: 1.75rem;
-}
-
-.page-header h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 0.25rem;
-}
-
+/* ── cool links page ── */
 .subhead {
   font-size: 0.875rem;
   color: var(--muted);
+  margin-bottom: 1.75rem;
 }
 
 .link-list {
