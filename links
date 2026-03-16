@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cool Links · Aakarsh Bengani</title>
+    <meta name="description" content="An assortment of cool things found on the internet." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="index.html">Aakarsh Bengani</a>
+        <span class="nav-links">
+          <a href="links.html" class="active">Cool Links</a>
+        </span>
+      </nav>
+
+      <section class="page-header">
+        <h2>Cool Links</h2>
+        <p class="subhead">An assortment of cool things I found on the internet.</p>
+      </section>
+
+      <section class="link-list">
+
+        <article class="link-item">
+          <div class="link-meta">
+            <a href="https://www.amazon.com/gp/product/B07ZHPBK5M" target="_blank" rel="noopener" class="link-title">Amazon Product</a>
+            <span class="link-domain">amazon.com</span>
+          </div>
+          <p class="link-note">Worth checking out.</p>
+        </article>
+
+        <article class="link-item">
+          <div class="link-meta">
+            <a href="https://michaelnielsen.org/blog/principles-of-effective-research/" target="_blank" rel="noopener" class="link-title">Principles of Effective Research</a>
+            <span class="link-domain">michaelnielsen.org</span>
+          </div>
+          <p class="link-note">Nielsen gives a really good account on how we can change academia to push the discovery engine of the world.</p>
+        </article>
+
+        <article class="link-item">
+          <div class="link-meta">
+            <a href="https://www.gap-map.org/resources/?sort=type&fields=computation" target="_blank" rel="noopener" class="link-title">The Gap Map</a>
+            <span class="link-domain">gap-map.org</span>
+          </div>
+          <p class="link-note">Good heuristic building for thinking deeply about your work and honing your taste. Ever need to peek at the frontier of engineering problems for different technologies to create more public good — this is the place.</p>
+        </article>
+
+        <article class="link-item">
+          <div class="link-meta">
+            <a href="https://patrickcollison.com/fast" target="_blank" rel="noopener" class="link-title">Fast</a>
+            <span class="link-domain">patrickcollison.com</span>
+          </div>
+          <p class="link-note">Speed good.</p>
+        </article>
+
+        <article class="link-item">
+          <div class="link-meta">
+            <a href="https://experimentology.io/" target="_blank" rel="noopener" class="link-title">Experimentology</a>
+            <span class="link-domain">experimentology.io</span>
+          </div>
+          <p class="link-note">An Open Science Approach to Experimental Psychology Methods. A free, living textbook on how to do research right.</p>
+        </article>
+
+        <article class="link-item">
+          <div class="link-meta">
+            <a href="https://nicholas.carlini.com/writing/2024/why-i-attack.html" target="_blank" rel="noopener" class="link-title">Why I Attack</a>
+            <span class="link-domain">nicholas.carlini.com</span>
+          </div>
+          <p class="link-note">Carlini puts it well: be good at what you do × important problem area = high impact.</p>
+        </article>
+
+      </section>
+    </main>
+  </body>
+</html>
