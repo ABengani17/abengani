@@ -10,14 +10,10 @@
   --bg: #fff;
   --text: #111;
   --muted: #666;
-  --accent: #111;
   --border: #e5e5e5;
-  --link: #111;
-  --link-hover: #555;
   --font-body: Georgia, 'Times New Roman', serif;
   --font-mono: 'Courier New', Courier, monospace;
-  --max-w: 560px;
-  --gap: 1.5rem;
+  --max-w: 540px;
 }
 
 html {
@@ -29,7 +25,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* ── layout ── */
@@ -44,51 +40,46 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 3rem;
+  margin-bottom: 2.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
 }
 
-nav > a {
+.nav-home {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: -0.01em;
+  color: var(--text);
 }
 
 .nav-links {
   display: flex;
   gap: 1.25rem;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 
 .nav-links a.active {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-color: var(--text);
 }
 
 /* ── links ── */
 a {
-  color: var(--link);
+  color: var(--text);
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-color: #bbb;
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  transition: text-decoration-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--link-hover);
-  text-decoration-color: var(--link-hover);
+  text-decoration-color: var(--text);
 }
 
 /* ── intro ── */
-.intro {
-  margin-bottom: 2rem;
-}
-
 .intro p {
-  margin-bottom: 1rem;
-  font-size: 0.97rem;
+  font-size: 0.96rem;
   color: var(--text);
+  margin-bottom: 1.1rem;
 }
 
 .intro p:last-child {
@@ -97,9 +88,9 @@ a:hover {
 
 /* ── links row (socials) ── */
 .links-row {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  margin-top: 1.75rem;
+  margin-top: 2rem;
 }
 
 .links-row a {
@@ -109,22 +100,23 @@ a:hover {
 
 .links-row a:hover {
   color: var(--text);
+  text-decoration-color: var(--text);
 }
 
 /* ── page header ── */
 .page-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .page-header h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   letter-spacing: -0.01em;
 }
 
 .subhead {
-  font-size: 0.88rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 
@@ -132,7 +124,6 @@ a:hover {
 .link-list {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .link-item {
@@ -153,23 +144,13 @@ a:hover {
 }
 
 .link-title {
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   font-weight: bold;
-  text-decoration-color: #bbb;
 }
 
-.link-title:hover {
-  text-decoration-color: var(--text);
-}
-
-.link-domain {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--muted);
-}
 
 .link-note {
-  font-size: 0.88rem;
+  font-size: 0.875rem;
   color: var(--muted);
   line-height: 1.6;
   max-width: 480px;
@@ -180,10 +161,9 @@ a:hover {
   main {
     padding: 2.5rem 1rem 4rem;
   }
-
   nav {
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 2rem;
   }
 }
